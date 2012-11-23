@@ -73,7 +73,7 @@
 										; Check for rule 4
               (if (and
 				   (not (looking-at ".*;$"))
-				   (looking-at "^[ \t]*\\([+_*]\\|macro\\|if\\|else\\|}?[ \t]*else[ \t]*if\\|for\\|context\\|[a-zA-Z0-9 \t]*=>[ \t]*{\\|includes\\|switch\\|case\\|default\\|while\\|catch\\)"))
+				   (looking-at "^[ \t]*\\([+_*]\\|macro\\|if\\|hint\\|else\\|}?[ \t]*else[ \t]*if\\|for\\|context\\|[a-zA-Z0-9 \t]*=>[ \t]*{\\|includes\\|switch\\|case\\|default\\|while\\|catch\\)"))
                   (progn
                     (setq cur-indent (+ (current-indentation) default-tab-width))
                     (setq not-indented nil))
